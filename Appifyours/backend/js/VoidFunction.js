@@ -1,0 +1,1 @@
+// VoidFunction implementation

@@ -27,12 +27,12 @@ class ShiprocketConfig {
   // 👇 API USER credentials (NOT your main Shiprocket login)
   // Create API User in Shiprocket → Settings → API → Configure
   // Use a DIFFERENT email than your main account
-  static const String email    = 'dhavakumar870@gmail.com';
-  static const String password = '9!wgMrjyNugCUo04oYlu5aBYmKa#47hV';
+  static const String email    = 'jeevaanandhan5599@gmail.com';
+  static const String password = '^gyMG!3w0i7fDVadn0ZLj^N&z9!4&31N';
 
   // Go to Shiprocket → Settings → Manage Pickup Addresses
   // Copy the EXACT "Pickup Location Name" from there
-  static const String pickupLocation  = 'Home'; // ← Must match "pickup_location" from API response
+  static const String pickupLocation  = 'home'; // ← Must match "pickup_location" from API response
   static const String pickupPincode   = '600124';
 
   static const String baseUrl    = 'https://apiv2.shiprocket.in/v1/external';

@@ -7846,7 +7846,7 @@ class ApiConfig {
 
 
 
-  static const String adminObjectId = 'ADMIN_OBJECT_ID_HERE'; // Will be replaced during publish
+  static const String adminObjectId = '699ff0fe9ce4f385a8f98ac1'; // Will be replaced during publish
 
 
 
@@ -8790,7 +8790,7 @@ class AdminManager {
 
 
 
-        Uri.parse('http://192.168.0.15:5000/api/admin/app-info'),
+        Uri.parse('http://192.168.0.7:5000/api/admin/app-info'),
 
 
 
@@ -11590,7 +11590,7 @@ class _SignInPageState extends State<SignInPage> {
 
 
 
-        Uri.parse('http://192.168.0.15:5000/api/login'),
+        Uri.parse('http://192.168.0.7:5000/api/login'),
 
 
 

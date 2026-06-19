@@ -647,6 +647,23 @@ class ApiService {
     }
   }
 
+  // Fetch admin analytics for owner-facing dashboard
+  Future<Map<String, dynamic>> getAdminAnalytics(String adminId) async {
+    try {
+      final response = await get('/api/get-admin-analytics/$adminId');
+      if (response.statusCode == 200) {
+        final Map<String, dynamic> data = json.decode(response.body);
+        return data;
+      } else {
+        final error = json.decode(response.body);
+        throw Exception(error['message'] ?? 'Failed to load admin analytics');
+      }
+    } catch (e) {
+      print('Error fetching admin analytics: $e');
+      throw Exception('Failed to fetch admin analytics: $e');
+    }
+  }
+
   // Check if user has already created a shop
   Future<bool> hasExistingShop() async {
     try {
